@@ -1,0 +1,37 @@
+{
+  "name": "tail-cli",
+  "version": "0.1.0",
+  "description": "Command-line interface for tailing a file in Node.js",
+  "main": "lib/tail-cli.js",
+  "scripts": {
+    "prepublishOnly": "npm run test",
+    "test": "standard && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saulotoledo/node-tail-cli.git"
+  },
+  "keywords": [
+    "tail",
+    "file",
+    "logs"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "author": "Saulo S. Toledo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saulotoledo/node-tail-cli/issues"
+  },
+  "homepage": "https://github.com/saulotoledo/node-tail-cli",
+  "dependencies": {
+    "isbinaryfile": "^4.0.6",
+    "tail": "^2.0.4",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "standard": "^14.3.4"
+  }
+}
