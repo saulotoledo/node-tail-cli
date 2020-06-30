@@ -54,4 +54,4 @@ This package provides the `tail-cli` command.
 
 ## License
 
-MIT. Please see [LICENSE](https://github.com/saulotoledo/tail-cli/blob/master/LICENSE) file for more details.
+MIT. Please see [LICENSE](https://github.com/saulotoledo/node-tail-cli/blob/master/LICENSE) file for more details.
