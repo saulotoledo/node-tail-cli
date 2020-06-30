@@ -20,7 +20,7 @@ It requires `Node@>=6`.
 
 This package provides the `tail-cli` command.
 
-**Options:**
+### Options
 
 | Option              | Alias           | Default value   | Description |
 |---------------------|-----------------|-----------------|-------------|
@@ -31,11 +31,23 @@ This package provides the `tail-cli` command.
 | `--useWatchFile`    | `--uwf`         | `false`         | If set to `true` it will force the use of `fs.watchFile` rather than delegating to the library the choice between `fs.watch` and `fs.watchFile`.
 | `--encoding`        | `-e`            | `"utf-8"`       | The encoding of the file to tail. |
 | `--flushAtEOF`      | `--feof`        | `false`         | Set it if you want to force flush of content when end of file is reached. Particularly useful when there is no separator character at the end of the file. |
+| `--verbose`         | `-v`            | `false`         | Display verbose log output to the console. |
 | `--help`            | `-h`            |                 | Show help. |
 
 The `--file/-f` parameter is required.
 
-**npm-script example:**
+For `boolean` values, the following options are equivalent:
+
+**Setting the value to `true`:**
+
+- *option only:* e.g. `--verbose`
+- *explicitly:* e.g. `--verbose true`
+
+**Setting the value to `false`:**
+- *prefix with `--no-`:* e.g. `--no-verbose`
+- *explicitly:* e.g. `--verbose false`
+
+### npm-script example
 
 ```json
 {
